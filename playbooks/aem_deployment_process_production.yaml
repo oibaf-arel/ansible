@@ -6,21 +6,6 @@
     Role: "{{ Role }}"
     Disp_Name: "{{ Disp_Name }}"
 
-- import_playbook: plays/aem_patch_aem_server.yaml
-  vars:
-    Environment: "{{ Environment }}"
-    Usage: "{{ Usage }}"
-    Role: "{{ Role }}"
-    AEM_Instance_Name: "{{ AEM_Instance_Name }}"
-
-- import_playbook: plays/aem_patch_disp_server.yaml
-  vars:
-    Environment: "{{ Environment }}"
-    Usage: "{{ Usage }}"
-    Role: "{{ Role }}"
-    Disp_Name: "{{ Disp_Name }}"
-
-
 - import_playbook: plays/aem_install_packages.yaml
   vars:
     Environment: "{{ Environment }}"
